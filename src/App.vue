@@ -22,8 +22,16 @@
       VSelectBox
     },
     methods: {
-      onSelect () {
-
+      onSelect ({ item, multiSelect }) {
+        const { selected, id } = item
+        const selectedItem = this.options.items.find(i => i.id === id)
+        if (!multiSelect) {
+          this.options.items = this.options.items.map(i => {
+            i.selected = false
+            return i
+          })
+        }
+        if (selectedItem) selectedItem.selected = !selected
       },
       onSearch (query) {
         return api.get({ ...query }).then(({ Page, PageCount, ItemsPerPage, Result }) => {
@@ -48,7 +56,7 @@
     data () {
       return {
         options: {
-          itemsPerPage: 25,
+          itemsPerPage: 15,
           onSelect: this.onSelect,
           onSearch: this.onSearch,
           page: 1,
