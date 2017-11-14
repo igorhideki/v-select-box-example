@@ -1,7 +1,7 @@
 {
   "name": "v-select-box-example",
   "description": "A Vue.js project",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Rodrigo Lopes <rodrigooslp@gmail.com>",
   "license": "MIT",
   "private": true,
@@ -12,7 +12,7 @@
   "dependencies": {
     "lodash": "^4.17.4",
     "url-loader": "^0.6.2",
-    "v-select-box": "^0.4.0",
+    "v-select-box": "^0.5.3",
     "vue": "^2.4.4"
   },
   "browserslist": [

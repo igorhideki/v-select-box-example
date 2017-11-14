@@ -4480,9 +4480,9 @@ uuid@^3.0.0, uuid@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.1.0.tgz#3dd3d3e790abc24d7b0d3a034ffababe28ebbc04"
 
-v-select-box@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/v-select-box/-/v-select-box-0.4.0.tgz#d07cac5ab3250694ccea222888c448eaa68b1030"
+v-select-box@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/v-select-box/-/v-select-box-0.5.3.tgz#929d974c3845e6840982d2dc2feb7461c0778b4d"
   dependencies:
     bootstrap "^3.3.7"
     font-awesome "^4.7.0"
