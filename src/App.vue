@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-md-12">
         <ul class="list-inline">
-          <li class="mw-240 m-r">
+          <li>
             <v-select-box :options="options"></v-select-box>
           </li>
         </ul>
@@ -81,9 +81,6 @@
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
-  }
-  .mw-240{
-    max-width: 240px;
   }
   .m-r {
     margin-right: 15px;
