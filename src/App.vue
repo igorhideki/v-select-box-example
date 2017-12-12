@@ -7,6 +7,12 @@
           <li>
             <v-select-box :options="options"></v-select-box>
           </li>
+          <li>
+            <v-select-box :options="options"></v-select-box>
+          </li>
+          <li>
+            <v-select-box :options="options"></v-select-box>
+          </li>
         </ul>
       </div>
     </div>
@@ -14,7 +20,8 @@
 </template>
 
 <script>
-  import api from '../api'
+  // import api from '../api'
+  import api from './request'
   import VSelectBox from 'v-select-box'
   export default {
     name: 'app',
@@ -23,15 +30,7 @@
     },
     methods: {
       onSelect ({ item, multiSelect }) {
-        const { selected, id } = item
-        const selectedItem = this.options.items.find(i => i.id === id)
-        if (!multiSelect) {
-          this.options.items = this.options.items.map(i => {
-            i.selected = false
-            return i
-          })
-        }
-        if (selectedItem) selectedItem.selected = !selected
+        console.log(item, multiSelect)
       },
       onSearch (query) {
         return api.get({ ...query }).then(({ Page, PageCount, ItemsPerPage, Result }) => {
@@ -56,7 +55,7 @@
     data () {
       return {
         options: {
-          itemsPerPage: 15,
+          itemsPerPage: 10,
           onSelect: this.onSelect,
           onSearch: this.onSearch,
           page: 1,
