@@ -1,21 +1,17 @@
 <template>
   <div id="app">
     <h1>v-select box example</h1>
-    <div class="row">
-      <div class="col-md-12">
-        <ul class="list-inline">
-          <li>
-            <v-select-box :options="options"></v-select-box>
-          </li>
-          <li>
-            <v-select-box :options="options"></v-select-box>
-          </li>
-          <li>
-            <v-select-box :options="options"></v-select-box>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <ul class="list-inline">
+      <li>
+        <v-select-box :options="options"></v-select-box>
+      </li>
+      <li>
+        <v-select-box :options="options"></v-select-box>
+      </li>
+      <li>
+        <v-select-box :options="options"></v-select-box>
+      </li>
+    </ul>
   </div>
 </template>
 
